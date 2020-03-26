@@ -112,10 +112,6 @@ uses a service of type [Service.Type=NodePort](/docs/concepts/services-networkin
 Ingress 不会公开任意端口或协议。
 将 HTTP 和 HTTPS 以外的服务公开到 Internet 时，通常使用 [Service.Type=NodePort](/docs/concepts/services-networking/service/#nodeport) 或者 [Service.Type=LoadBalancer](/docs/concepts/services-networking/service/#loadbalancer) 类型的服务。
 
-可以将Ingress配置为提供服务外部可访问的URL，负载均衡流量，终止 SSL / TLS 并提供基于名称的虚拟主机。 [Ingress 控制器](/docs/concepts/services-networking/ingress-controllers)通常负责通过负载平衡器来实现入口，尽管它也可以配置边缘路由器或其他前端以帮助处理流量。
-
-Ingress 不会公开任意端口或协议。 将 HTTP 和 HTTPS 以外的服务公开给 Internet 时，通常使用以下类型的服务 [Service.Type=NodePort](/docs/concepts/services-networking/service/#nodeport) 或者 [Service.Type=LoadBalancer](/docs/concepts/services-networking/service/#loadbalancer).
-
 <!--
 ## Prerequisites
 -->
